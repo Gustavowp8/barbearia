@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    background: blue;
 }
 
-.header{
+.header{ 
+    background-image: url(../imagens/barbearia.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: fixed;
-    top: 0;
-    
     width: 100%;
-    /*max-width: 600px;*/
-    background: #202e34;
-    z-index: 1;   
+    z-index: 1;
+    top: 0;
 }
 .header h1{
     color: rgba(255, 255, 255, 0);
 }
-.header img{
-    width: 100%;
-}
 
 .opcBar{
-    width: 100%;
-    margin-top: 390px;
-    padding: 10px;
     position: relative;
+    width: 100%;
+    margin-top: 300px;
+    padding: 5px;
     background: white;
     border-radius: 20px;
     z-index: 2;
@@ -96,18 +96,19 @@ body{
 }
 .hora{
     margin-top: 50px;
+    margin: 10px;
     background: #0085ff;
     border-radius: 15px;
     display: grid;
     grid-template-columns: minmax(110px, 80px)1fr;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     filter: drop-shadow(20px 15px 10px rgba(0,0,0,.5));
     color: white;
 }
 
 .reders img{
-    width: 60px;
+    width: 50px;
     margin: 10px;
     transition: all 0.5s;
     cursor: pointer;
@@ -195,13 +196,24 @@ body{
     background-size: cover;
     background-position: center;
   }
+  .fotos2{
+      background: #0085ff;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+  }
 
   .mapa{
       border-radius: 15px;
-      width: 350px;
-      height: 200px;
-      margin: auto;
-      margin-bottom: 50px;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      
+      text-align: center;
+      
+      background: #0085ff;
+  }
+  .map2{
+      max-width: 100%;
+      padding: 10px;
   }
 
   .agenda{
@@ -229,5 +241,8 @@ body{
     .servico > div{
         flex: 1 0 90px;
         margin: 10px;
+    }
+    .servico > div img{
+        width: 50px;
     }
 }
