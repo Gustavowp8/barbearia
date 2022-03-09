@@ -1,248 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans', sans-serif;
-    background: blue;
+    margin: 0;
+    padding: 0;
 }
 
-.header{ 
+.header{
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2px 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.capa{
+    position: fixed;
     background-image: url(../imagens/barbearia.png);
     background-position: center;
     background-size: cover;
+    width: 100%;
+    top: 62px;
+    left: 0;
     padding-top: 100px;
     padding-bottom: 100px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-}
-.header h1{
-    color: rgba(255, 255, 255, 0);
-}
-
-.opcBar{
-    position: relative;
-    width: 100%;
-    margin-top: 300px;
-    padding: 5px;
-    background: white;
-    border-radius: 20px;
     z-index: 2;
 }
-.proprie img{
-    width: 100px;
-    margin-bottom: -10px;
-    transition: all .5s;
-    border: 10px solid transparent;
-}
-.proprie img:hover{
-    border: 10px solid #136497;
-    border-radius: 50%;
-}
-.proprie{
-    text-align: center;
-}
-.proprie p{
-    margin-top: -10px;
-}
-#tTitulo{
-    margin-top: 50px;
-    text-align: center;
-}
 
-.servico{
+.conteudo{
+    position: relative;
+    z-index: 5;
+    background: rebeccapurple;
+    margin-top: 320px;
+    text-align: center;
+    padding-top: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.conteudo img{
+    width: 100px;
+    margin-bottom: -15px;
+}
+.conteudo h2{
+    margin-bottom: -10px;
+}
+.tTitulo{
+    background: rebeccapurple;
+    text-align: center;
+    padding: 15px;
+    margin-top: -17px;
+    position: relative;
+    z-index: 5;
+}
+.servicos img{
+    width: 50px;
+}
+.servicos{
+    max-width: 800px;
+    margin: auto;
+    background: rebeccapurple;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
 }
-.servico img{
-    width: 60px;
-}
-
-.servico > div{
-    flex: 0 0 150px;
-    /*background: #067eed;*/
-    border: 1px solid black;
+.servicos > div{
+    flex: 0 0 70px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
-    margin: 20px;
-    align-items: center;
-    margin: auto;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.126);
-    transition: all 0.5s;
-    cursor: pointer;
+    border: 1px solid black;
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
-.servico > div:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(20px 15px 10px rgba(0,0,0,.5));
+.Marcacao img{
+    width: 50px;
 }
-
-.servico > div p{
-    margin-top: -5px;
+.Marcacao{
+    background: rebeccapurple;
     padding: 10px;
-}
-
-.hora img{
-    width: 80px;
-    transition: all 1s;
-    cursor: pointer;
-}
-.hora img:hover{
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 .hora{
-    margin-top: 50px;
-    margin: 10px;
-    background: #0085ff;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: minmax(110px, 80px)1fr;
-    align-items: center;
+    padding-top: 50px;
+    background: red;
+    position: relative;
+    z-index: 5;
+}
+#marca h4{
+    background: white;
     padding: 5px;
-    filter: drop-shadow(20px 15px 10px rgba(0,0,0,.5));
-    color: white;
-}
-
-.reders img{
-    width: 50px;
-    margin: 10px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.reders img:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
-.reders{
-    text-align: center;
-}
-
-/*=========*/
-.swiper {
-    width: 240px;
-    height: 320px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  .swiper-slide:nth-child(1n) {
-    background-image: url(../fotos/foto01.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(2n) {
-    background-image: url(../fotos/foto02.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(3n) {
-    background-image: url(../fotos/foto03.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(4n) {
-    background-image: url(../fotos/foto04.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(5n) {
-    background-image: url(../fotos/foto05.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(6n) {
-    background-image: url(../fotos/foto06.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(7n) {
-    background-image: url(../fotos/foto07.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(8n) {
-    background-image: url(../fotos/foto08.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(9n) {
-    background-image: url(../fotos/foto09.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-slide:nth-child(10n) {
-    background-image: url(../fotos/foto10.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .fotos2{
-      background: #0085ff;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-  }
-
-  .mapa{
-      border-radius: 15px;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      
-      text-align: center;
-      
-      background: #0085ff;
-  }
-  .map2{
-      max-width: 100%;
-      padding: 10px;
-  }
-
-  .agenda{
-      background: #272d43;
-      padding: 0.1rem;
-      display: block;
-      color: white;
-      border-radius: 15px;
-      margin: auto;
-      text-align: center;
-      box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.263);
-  }
-
-  footer{
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: relative;
-      z-index: 2;
-  }
-
-@media(max-width: 600px){
-
-    .servico > div{
-        flex: 1 0 90px;
-        margin: 10px;
-    }
-    .servico > div img{
-        width: 50px;
-    }
+    border-radius: 15px;
 }
