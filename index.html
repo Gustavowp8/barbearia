@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link
+  rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Barbearia</title>
+</head>
+<body>
+    
+    <header id="header" class="header">
+        <img src="imagens/barbearia.png" alt="foto">
+        <h1>barber</h1>
+    </header>
+
+    <div class="opcBar">
+
+        <div class="proprie">
+            <img src="imagens/perfil.png" alt="foto">
+            <h2>Seu nome</h2>
+            <p>proprietario</p>
+        </div>
+
+        <h1 id="tTitulo">serviços</h1>
+
+        <div class="servico">
+
+            <div> <br>
+                <img src="imagens/tesoura.png" alt="img">
+                <p>Corte</p>
+            </div>
+
+            <div> <br>
+                <img src="imagens/icons8-barba-por-fazer-100.png" alt="img">
+                <p>Barba</p>
+            </div>
+
+            <div>
+                <img src="imagens/icons8-xampu-100.png" alt="img">
+                <p>Hidratação capilar</p>
+            </div>
+
+        </div>
+
+        <div class="hora1">
+            <div class="hora">
+                <div>
+                    <img src="imagens/rotacao-no-sentido-horario.png" alt="img">
+                </div>
+    
+                <div>
+                    <h3>Veja nossos horarios</h3>
+                    <p>Hoje dia 09 aberto até as 18:00</p>
+                </div>
+            </div>
+        </div> <br><br>
+
+        <h1 id="tTitulo">Fale com a gente</h1>
+
+        <div class="reders">
+
+            <img src="imagens/facebook.png" alt="img">
+            <img src="imagens/instagram.png" alt="img">
+            <img src="imagens/whatsapp.png" alt="img">
+            <img src="imagens/chamada-telefonica.png" alt="img">
+
+        </div>
+
+        <h1 id="tTitulo">Veja nossas fotos</h1>
+
+        <!--Parte das fotos-->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+          </div>
+        
+        <!--Parte dotos-->
+
+        <br>
+        <h1 id="tTitulo">Nossa localização</h1>
+
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15338.642732443876!2d-48.030762149999994!3d-16.03116965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1646853228600!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy"></iframe>
+
+        
+        <div class="agenda">
+            <h4>Agendar atendimento</h4>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Barbearia 2022</p>
+        <p>Site desenvolvido por Gage&copy; 2022</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "cards",
+          grabCursor: true,
+        });
+      </script>
+</body>
+</html>
