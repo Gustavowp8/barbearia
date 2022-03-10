@@ -7,7 +7,9 @@ body{
 }
 
 .header{
-    background: black;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     position: fixed;
     left: 0;
     top: 0;
@@ -16,6 +18,10 @@ body{
     text-align: center;
     z-index: 10;
 }
+.header a{
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .capa{
     position: fixed;
@@ -23,7 +29,7 @@ body{
     background-position: center;
     background-size: cover;
     width: 100%;
-    top: 62px;
+    top: 0;
     left: 0;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -33,12 +39,13 @@ body{
 .conteudo{
     position: relative;
     z-index: 5;
-    background: rebeccapurple;
-    margin-top: 320px;
+    background: #067eed;
+    color: white;
+    margin-top: 300px;
     text-align: center;
     padding-top: 5px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .conteudo img{
     width: 100px;
@@ -48,17 +55,23 @@ body{
     margin-bottom: -10px;
 }
 .tTitulo{
-    background: rebeccapurple;
+    background: #067eed;
+    color: white;
     text-align: center;
     padding: 15px;
     margin-top: -17px;
+    padding-bottom: 50px;
+    margin-bottom: -40px;
     position: relative;
     z-index: 5;
 }
 .tTitulo2{
     text-align: center;
     padding-top: 50px;
-    background: rebeccapurple;
+    background: #067eed;
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
     position: relative;
     z-index: 5;
 }
@@ -67,8 +80,9 @@ body{
 }
 .servicos{
     max-width: 800px;
+    padding-top: 50px;
     margin: auto;
-    background: rebeccapurple;
+    background: #067eed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,7 +103,7 @@ body{
     width: 50px;
 }
 .Marcacao{
-    background: rebeccapurple;
+    background: #280b6f;
     padding: 10px;
     width: 300px;
     margin: auto;
@@ -99,8 +113,10 @@ body{
 }
 .hora{
     padding-top: 50px;
-    background: red;
+    background: #067eed;
     position: relative;
+    padding-bottom: 50px;
+    margin-bottom: -30px;
     z-index: 5;
 }
 #marca h4{
@@ -111,7 +127,7 @@ body{
 
 #tectodeFale h3{
     text-align: center;
-    background: gold;
+    color: white;
 }
 
 .social img{
@@ -127,15 +143,17 @@ body{
 }
 
 .social{
-    background: rebeccapurple;
+    background: #067eed;
     text-align: center;
     padding: 10px;
+    padding-bottom: 50px;
+    margin-bottom: -20px;
     position: relative;
     z-index: 5;
 }
 
 .fotos{
-    background: rebeccapurple;
+    background: #067eed;
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -158,47 +176,67 @@ body{
   }
 
   .swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
+    background-image: url(../fotos/foto01.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
+    background-image: url(../fotos/foto02.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
+    background-image: url(../fotos/foto03.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
+    background-image: url(../fotos/foto04.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
+    background-image: url(../fotos/foto05.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
+    background-image: url(../fotos/foto06.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
+    background-image: url(../fotos/foto07.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
+    background-image: url(../fotos/foto08.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
+    background-image: url(../fotos/foto09.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
+    background-image: url(../fotos/foto010.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   .local{
-      background: rebeccapurple;
+    background: #067eed;
       position: relative;
       text-align: center;
       padding: 10px;
