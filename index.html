@@ -57,11 +57,11 @@
                 <img src="imagens/rotacao-no-sentido-horario.png" alt="">
             </div>
     
-            <div id="marca">
+            <div id="marca" onclick="verhorarios()">
                 <h4>Veja nossos horarios</h4>
             </div>
 
-            <div id="marca">
+            <div id="marca" onclick="cahaagendamento()">
                 <h4>Agendar atendimento</h4>
             </div>
     
@@ -69,6 +69,25 @@
         </div>
 
     </div>
+
+    <!--====Aré de popup =====-->
+
+    <div class="agendaBar" id="agendaBar">
+        <div class="agendabar2">
+            <div class="agendaBarfechar">
+                <p> </p> <p>AVISO</p> <p id="fecha" onclick="fechaAgenda()">x</p>
+            </div>
+
+            <img src="imagens/perspective_matte - Copia.png" width="150px">
+
+            <h3>
+                Desculpe ainda não estamos fazendo agendamento online.
+            </h3>
+
+        </div>
+    </div>
+
+    <!--====Aré de popup =====-->
 
     <h2 class="tTitulo2">Veja nosso trabalho</h2>
 
@@ -127,5 +146,6 @@
           grabCursor: true,
         });
       </script>
+      <script src="estilo/app.js"></script>
 </body>
 </html>
